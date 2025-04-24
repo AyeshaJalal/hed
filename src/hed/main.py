@@ -1,15 +1,16 @@
 def decor(f):
+    print("****************")
+
     def wrapper():
         f()
-        print("@@@@@@@@@@@@@@")
+        print("****************")
 
     return wrapper
 
 
 @decor
 def msg():
-    print("Hello")
-    print("Hello")
+    print("🎉Hello, World!🎉")
 
 
 # can be done this way
